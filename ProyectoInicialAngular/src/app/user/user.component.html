@@ -1,0 +1,16 @@
+<section>
+    @if (isLogged) {
+        <p>Bienvenido, {{username}}</p>
+        <img (click)="greetUser(username)" alt ="FOTASO" src="https://github.com/goumes.png">
+        <input (click)="changeLoginStatus()" type="button" value="Cerrar sesión">
+    }
+    @else {
+        <p>Inicia sesión</p>
+        <input (click)="changeLoginStatus()" type="button" value="Iniciar sesión">
+    }
+<app-games username="{{username}}" (addFavouriteEvent)="getFavouriteGame($event)">
+</app-games>
+@if (favouriteGame != "") {
+    <p>Tu juego favorito es {{favouriteGame}}</p>
+}
+</section>
