@@ -15,5 +15,5 @@ import { CommentsComponent } from './comments/comments.component';
 })
 export class AppComponent {
   title = 'ProyectoInicialAngular';
-  favourite_project_type: string = "Tienda 🤮"
+  favourite_project_type: string = "Tienda 😀"
 }
